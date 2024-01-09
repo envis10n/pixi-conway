@@ -1,0 +1,28 @@
+{
+  "packageManager": "yarn@1.22.21",
+  "name": "pixi-conway",
+  "version": "0.0.1",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build:release": "webpack --mode=production",
+    "build:debug": "webpack --mode=development",
+    "watch": "webpack --mode=development --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "esbuild": "^0.19.11",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "^3.1.1",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@pixi/unsafe-eval": "^7.3.3",
+    "pixi.js": "^7.3.3"
+  }
+}
